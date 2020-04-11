@@ -1,0 +1,18 @@
+{
+  "name": "LimitlessTheoryTheme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/K-JAX/LimitlessTheory.git",
+  "author": "Kevin Garubba <kevingarubba@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
