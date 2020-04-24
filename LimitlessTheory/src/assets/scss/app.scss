@@ -61,6 +61,7 @@
 // Global
 @import "global/accessibility";
 @import "global/colors";
+@import "global/effects";
 @import "global/text";
 @import "global/wp-admin";
 @import "global/wp-overrides";
@@ -70,11 +71,16 @@
 @import "modules/navigation";
 @import "modules/content";
 @import "modules/footer";
+@import "modules/header";
 @import "modules/editor-style";
+@import "modules/logo-svg-animate";
+@import "modules/sidebar";
 
 // Components
 @import "components/buttons";
 @import "components/cards";
+@import "components/forms";
+@import "components/hero";
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
@@ -82,4 +88,5 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
+@import "templates/woocommerce";
 // body{ background: blue !important;}

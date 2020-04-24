@@ -219,7 +219,6 @@ gulp.task('phpcbf', function () {
 function server(done) {
   browser.init({
     proxy: BROWSERSYNC.url,
-
     ui: {
       port: 8080
     },
@@ -237,7 +236,7 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
-  gulp.watch('src/assets/scss/**/*.scss', sass)
+  gulp.watch('src/assets/scss/**/*.scss', gulp.series(sass, reload))
     .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
   gulp.watch('**/*.php', reload)

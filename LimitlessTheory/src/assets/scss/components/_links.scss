@@ -6,3 +6,7 @@
 [data-whatinput="touch"] a:focus, button:focus {
   outline: none;
 }
+
+.dropdown.menu > li.is-active > a{
+  color: $blue !important;
+}

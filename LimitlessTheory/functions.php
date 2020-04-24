@@ -54,5 +54,34 @@ require_once( 'library/responsive-images.php' );
 /** Gutenberg editor support */
 require_once( 'library/gutenberg.php' );
 
+add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+
+function my_wp_nav_menu_objects( $items, $args ) {
+
+	foreach( $items as &$item ) {
+		$icon = get_field('icon', $item);
+		
+		if( $icon ) {
+			
+			$item->title .= ' <img src="' . $icon['url'].'" />';
+		}
+	}
+    return $items;
+}
+add_filter('wpcf7_autop_or_not', '__return_false');
+
+add_filter('wpcf7_form_elements', function($content) {
+    $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+    return $content;
+});
+
+function mytheme_setup() {
+    add_theme_support('custom-logo');
+}
+
+add_action('after_setup_theme', 'mytheme_setup');
+
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );

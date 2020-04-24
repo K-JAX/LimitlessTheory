@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .main-container {
   @include xy-grid-container;
 }
@@ -50,5 +54,12 @@
       margin-top: 1rem;
     }
 
+  }
+}
+
+.absolute-to-relative{
+  position: absolute !important;
+  @media all and (max-width: 768px){
+    position: relative !important;
   }
 }
