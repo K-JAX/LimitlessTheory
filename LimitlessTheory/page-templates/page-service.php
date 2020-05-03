@@ -92,10 +92,10 @@ endwhile; endif; ?>
     <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="200" class="text-center"><?php echo get_sub_field('description'); ?></div>
 
     <h3 data-aos="fade-up" data-aos-duration="900" data-aos-delay="500" class="text-center"><?php echo get_sub_field('list_title'); ?></h3>
-    <div class="row justify-content-center">
+    <div class="row justify-content-around">
         <?php if(have_rows('list_repeater')): $count=0; ?>
             <?php while(have_rows('list_repeater')): the_row(); ?>
-            <?php echo $count % 4 == 0 ? '<ul data-aos="fade-up" data-aos-duration="1200" data-aos-delay="'. round($count * 1 + 6) .'00" class="mini-disc-chain-list ml-5">' : ''; ?>
+            <?php echo $count % 4 == 0 ? '<ul data-aos="fade-up" data-aos-duration="1200" data-aos-delay="'. round($count * 1 + 6) .'00" class="mini-disc-chain-list col-md-4 col-9 ml-5">' : ''; ?>
                 <li class="mini-chain-item big-shot ml-5 row align-content-center">
                     <span class="h6 my-5"><?php echo get_sub_field('list_item_text'); ?></span>
                 </li>

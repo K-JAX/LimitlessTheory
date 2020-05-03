@@ -165,11 +165,17 @@
             color: #33718D;
         }
         &.big-shot{
+            position:relative;
             font-size: 72px;
+            // height: 100px;
             &:before{
                 content: '';
                 position: absolute;
                 left: -1.025em;
+                top: 0;
+                bottom: 0;
+                margin-top: auto;
+                margin-bottom: auto;
                 width: 48px;
                 height: 48px;
                 border-radius: 100px;
@@ -177,7 +183,7 @@
             }
             &:after{
                 height: 0.75em;
-                top: 1.2em;
+                top: 1.225em;
             }
         }
         &:after{
