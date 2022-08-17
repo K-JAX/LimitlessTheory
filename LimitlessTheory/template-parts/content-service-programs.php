@@ -18,7 +18,7 @@
             <!-- // Program Image -->
             <?php if( !empty(get_sub_field('card_image'))): ?>
             
-            <img class="card-img-top border-top border-bottom" src="<?php echo get_sub_field('card_image')['url']; ?>" alt="<?php echo get_sub_field('card_image')['alt']; ?>" />
+            <img class="card-img-top service-card-img border-top border-bottom" src="<?php echo get_sub_field('card_image')['url']; ?>" alt="<?php echo get_sub_field('card_image')['alt']; ?>" />
             <?php endif; ?>
             
             <!-- // Program Feature Repeater -->

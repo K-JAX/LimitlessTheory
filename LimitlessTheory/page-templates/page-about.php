@@ -57,7 +57,7 @@ get_header(); ?>
 
 <?php if( have_rows('origin_story_section_3') ): while( have_rows('origin_story_section_3') ): the_row(); ?>
 <!-- //  Origin Story Section 3 -->
-<section data-aos="fade" data-aos-duration="900" class="container-fluid text-white" style="background-image: url(<?php echo get_sub_field('background_image')['url']; ?>);">
+<section data-aos="fade" data-aos-duration="900" class="container-fluid text-white" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0,0,0,0) 100%), url(<?php echo get_sub_field('background_image')['url']; ?>);">
     <div class="container">
       <!-- // Alignment -->
       <div class="row flex-<?php echo get_sub_field('alignment') == 'left' ? 'row' : 'row-reverse'; ?>">
@@ -88,7 +88,7 @@ get_header(); ?>
 
         <!-- // Image -->
         <?php if( !empty(get_sub_field('image')) ): ?>
-            <img class="col-lg-3 pl-0" src="<?php echo get_sub_field('image')['url'] ?>" />
+            <img class="col-lg-3 pl-0" style="object-fit: cover;" src="<?php echo get_sub_field('image')['url'] ?>" />
         <?php endif; ?>
 
         <figcaption class="row px-4 col-lg-9">

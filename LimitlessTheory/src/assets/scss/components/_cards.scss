@@ -1,5 +1,4 @@
 .cards-container {
-
   @include xy-grid;
 
   .card {
@@ -9,13 +8,15 @@
       .card-content {
         padding: 1rem;
       }
-
     }
 
     @include breakpoint(medium) {
-      @include xy-cell(1 of 3, true, 0.7rem );
-
+      @include xy-cell(1 of 3, true, 0.7rem);
     }
-
   }
+}
+
+.service-card-img {
+  height: 270px;
+  object-fit: cover;
 }

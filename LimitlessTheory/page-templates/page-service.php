@@ -51,6 +51,9 @@ endwhile; endif; ?>
                     <?php endif; ?>
                 </div>
             </div>
+            <div class="col-12 col-md-6 my-5 py-5 px-5">
+                    <?php echo get_sub_field('optional_youtube_video'); ?>
+            </div>
         </div>
     </div>
 </header>
