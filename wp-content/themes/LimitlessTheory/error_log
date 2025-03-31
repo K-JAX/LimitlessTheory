@@ -1,0 +1,12 @@
+[09-Nov-2024 03:25:56 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/limitmc2/public_html/wp-content/themes/LimitlessTheory/404.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/themes/LimitlessTheory/404.php on line 9
+[09-Nov-2024 03:25:59 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/limitmc2/public_html/wp-content/themes/LimitlessTheory/404.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/themes/LimitlessTheory/404.php on line 9
+[11-Nov-2024 00:59:03 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/limitmc2/public_html/wp-content/themes/LimitlessTheory/404.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/themes/LimitlessTheory/404.php on line 9

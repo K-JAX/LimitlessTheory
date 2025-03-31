@@ -1,2 +1,89 @@
+# WordPress #
+#############
+wp-config.php
+configCache.php
+wp-cli.local.yml
+wp-content/uploads
+wp-content/uploads*/
+wp-content/backup*/
+wp-content/logs
+sitemap.xml
+sitemap.xml.gz
+
+# WP Upgrades #
+###############
+.maintenance
+wp-content/upgrade
+wp-content/upgrade-temp-backup
+
+# Caching #
+###########
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache
+wp-content/et-cache
+wp-content/wfcache
+wp-content/wpo-cache
+wp-content/db.php
+wp-content/w3tc-config
+
+# Backups #
+###########
+wp-content/updraft
+wp-content/ai1wm-backups
+
+# Wordfence Security #
+######################
+wordfence-waf.php
+wp-content/wflogs
+wp-content/plugins/wordfence
+
+# Server Config #
+#################
+*.htaccess
+*.user.ini
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# System #
+##########
+.DS_Store*
+ehthumbs.db
+Icon\r
+Thumbs.db
+._*
+
+# Generated Files #
+######################
+*.un~
+*.swp
+
+# SASS #
+##########
+.sass-cache
+
+# Package Manager & Bundler #
+##############################
 node_modules/
-twenty*/
+.data/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.tar.gz
+
+# MISC #
+########
+local-xdebuginfo.php

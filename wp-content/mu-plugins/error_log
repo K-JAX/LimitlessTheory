@@ -1,0 +1,16 @@
+[04-Oct-2024 04:15:47 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php on line 59
+[06-Oct-2024 01:40:37 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php on line 59
+[10-Oct-2024 09:30:00 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php on line 59
+[04-Nov-2024 07:55:20 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php:59
+Stack trace:
+#0 {main}
+  thrown in /home4/limitmc2/public_html/wp-content/mu-plugins/sso.php on line 59
