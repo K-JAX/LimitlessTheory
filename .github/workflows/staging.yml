@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} is staging ${{github.repository}}.
 on:
   push:
     branches:
-      - stage
+      - staging
 jobs:
   deploy:
     name: Staging Deploy
@@ -22,6 +22,5 @@ jobs:
           cd ${{ vars.DIRECTORY }}
           git config --global --add safe.directory ${{ vars.DIRECTORY }}
           git fetch
-          git checkout stage
-          git reset --hard origin/stage
-          
+          git checkout staging
+          git reset --hard origin/staging
