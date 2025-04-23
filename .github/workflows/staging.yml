@@ -1,0 +1,26 @@
+name: Deploy Staging
+run-name: ${{ github.actor }} is staging ${{github.repository}}.
+
+on:
+  push:
+    branches:
+      - stage
+jobs:
+  deploy:
+    name: Staging Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: SSH Deploy
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_WPCLIENTS_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVKEY }}
+        script_stop: true
+        script: |
+          cd ${{ vars.DIRECTORY }}
+          git config --global --add safe.directory ${{ vars.DIRECTORY }}
+          git fetch
+          git checkout stage
+          git reset --hard origin/stage
