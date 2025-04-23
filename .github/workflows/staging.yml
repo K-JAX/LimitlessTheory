@@ -24,3 +24,4 @@ jobs:
           git fetch
           git checkout stage
           git reset --hard origin/stage
+          
