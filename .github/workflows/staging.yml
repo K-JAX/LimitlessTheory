@@ -1,10 +1,12 @@
 name: Deploy Staging
-run-name: ${{ github.actor }} is staging ${{github.repository}}.
+#run-name: ${{ github.actor }} is staging ${{github.repository}}.
 
 on:
   push:
-    branches:
-      - staging
+    branches: [staging]
+  workflow_dispatch:
+
+
 jobs:
   deploy:
     name: Staging Deploy
@@ -17,7 +19,7 @@ jobs:
         host: ${{ secrets.SSH_WPCLIENTS_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVKEY }}
-        script_stop: true
+
         script: |
           cd ${{ vars.DIRECTORY }}
           git config --global --add safe.directory ${{ vars.DIRECTORY }}
