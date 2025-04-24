@@ -24,4 +24,3 @@ jobs:
           git fetch
           git checkout staging
           git reset --hard origin/staging
-          
