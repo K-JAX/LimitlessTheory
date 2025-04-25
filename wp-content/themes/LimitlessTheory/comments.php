@@ -9,6 +9,7 @@
  * @since FoundationPress 1.0.0
  */
 
+ 
 if ( have_comments() ) :
 ?>
 	<section id="comments">
@@ -79,4 +80,3 @@ if ( comments_open() ) :
 <?php
 	endif; // If you delete this the sky will fall on your head.
 
-	
